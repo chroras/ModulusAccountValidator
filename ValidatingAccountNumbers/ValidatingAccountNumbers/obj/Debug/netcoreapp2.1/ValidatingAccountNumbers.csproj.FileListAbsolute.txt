@@ -1,0 +1,14 @@
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\bin\Debug\netcoreapp2.1\ValidatingAccountNumbers.deps.json
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\bin\Debug\netcoreapp2.1\ValidatingAccountNumbers.runtimeconfig.json
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\bin\Debug\netcoreapp2.1\ValidatingAccountNumbers.runtimeconfig.dev.json
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\bin\Debug\netcoreapp2.1\ValidatingAccountNumbers.dll
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\bin\Debug\netcoreapp2.1\ValidatingAccountNumbers.pdb
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.csprojAssemblyReference.cache
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.csproj.CoreCompileInputs.cache
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.RazorAssemblyInfo.cache
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.RazorAssemblyInfo.cs
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.AssemblyInfoInputs.cache
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.AssemblyInfo.cs
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.RazorTargetAssemblyInfo.cache
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.dll
+C:\Users\Chris\source\repos\ValidatingAccountNumbers\ValidatingAccountNumbers\obj\Debug\netcoreapp2.1\ValidatingAccountNumbers.pdb

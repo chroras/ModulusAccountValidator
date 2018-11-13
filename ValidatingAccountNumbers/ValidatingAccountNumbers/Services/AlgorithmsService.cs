@@ -1,47 +1,26 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using ValidatingAccountNumbers.ControllerTests;
+using System.Threading.Tasks;
 
-namespace ValidatingAccountNumbers
+namespace ValidatingAccountNumbers.Services
 {
-    public class Program
+    public class AlgorithmsService: IAlgorithmsInterface
     {
-        public static void Main(string[] args)
-        {
-            CreateWebHostBuilder(args).Build().Run();
-            Program accountchecker = new Program();
-
-            if (accountchecker.CheckBankAccount("050022", "058999"))
-                Console.Out.Write("Account is valid");
-            else
-                Console.Out.Write("Account is invalid");
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-    WebHost.CreateDefaultBuilder(args)
-        .UseStartup<Startup>();
-
-        public bool CheckBankAccount(string sortCode, string accountNumber)
+        public async Task<bool> Mod()
         {
             //Get the line
             var modulusCodeLine = File.ReadLines("ModulusTable.txt")
                        .Select((x, i) => new { Line = x, LineNumber = i })
-                       .Where(x => x.Line.Contains(sortCode))
+                       .Where(x => x.Line.Contains(""))
                        .ToList().FirstOrDefault();
 
             //If it is a Mod10 or MOD11
             if (modulusCodeLine.Line.Contains("Mod"))
                 ValidateMod(modulusCodeLine.Line);
-
-            //If DBLAL
-            if (modulusCodeLine.Line.Contains("DblAl"))
-                ValidateDblAl(modulusCodeLine.Line);
             return true;
         }
-
         public bool ValidateMod(string modulusCodeLine)
         {
             string sum = string.Empty;
@@ -80,28 +59,7 @@ namespace ValidatingAccountNumbers
             return true;
         }
 
-        public bool ValidateDblAl(string modulusCodeLine)
-        {
-            string sum = string.Empty;
-            int count = 0;
-            foreach (char number in modulusCodeLine.Replace(" ", string.Empty).Substring(0, 12))
-            {
-                sum += ((int)char.GetNumericValue(number) * (int)char.GetNumericValue(modulusCodeLine.Replace(" ", string.Empty).Substring(17)[count])).ToString();
-                count++;
-            }
-            int result = 0;
-            int remainder = 0;
-            foreach (char sumNumber in sum)
-            {
-                result += sumNumber;
-            }
-            result = result / 10;
-            remainder = result % 11;
-            if (remainder > 0)
-                return false;
-            Console.Out.Write(result.ToString());
-        
-            return true;
-        }
     }
+
+
 }
